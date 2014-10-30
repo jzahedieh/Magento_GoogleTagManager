@@ -58,6 +58,22 @@
                     </googletagmanager_order_success>
                 </observers>
             </checkout_multishipping_controller_success_action>
+            <googletagmanager_datalayer_catalog_category_view>
+                <observers>
+                    <googletagmanager_catalog_page>
+                        <class>googletagmanager/observer</class>
+                        <method>setCatalogViewDataLayer</method>
+                    </googletagmanager_catalog_page>
+                </observers>
+            </googletagmanager_datalayer_catalog_category_view>
+            <googletagmanager_datalayer_catalog_product_view>
+                <observers>
+                    <googletagmanager_catalog_page>
+                        <class>googletagmanager/observer</class>
+                        <method>setProductViewDataLayer</method>
+                    </googletagmanager_catalog_page>
+                </observers>
+            </googletagmanager_datalayer_catalog_product_view>
         </events>
         <layout>
             <updates>

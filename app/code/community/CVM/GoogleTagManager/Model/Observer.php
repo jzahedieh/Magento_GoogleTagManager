@@ -22,4 +22,30 @@ class CVM_GoogleTagManager_Model_Observer
 		$block = Mage::app()->getFrontController()->getAction()->getLayout()->getBlock('google_tag_manager');
 		if ($block) $block->setOrderIds($orderIds);
 	}
+
+    /**
+     * Add required data for catalog view dataLayer.
+     *
+     * @param Varien_Event_Observer $observer
+     */
+    public function setCatalogViewDataLayer(Varien_Event_Observer $observer)
+    {
+        /* @var $data Varien_Object */
+        $data = $observer->getEvent()->getDataLayer();
+
+        // todo: $data->addData();
+    }
+
+    /**
+     * Add required data for product view dataLayer.
+     *
+     * @param Varien_Event_Observer $observer
+     */
+    public function setProductViewDataLayer(Varien_Event_Observer $observer)
+    {
+        /* @var $data Varien_Object */
+        $data = $observer->getEvent()->getDataLayer();
+
+        // todo: $data->addData();
+    }
 }
